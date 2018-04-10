@@ -1,0 +1,51 @@
+
+
+<html>
+<head>
+	<title>Inscription</title>
+</head>
+	<body>
+		<div method="post" action="ask_nouvelUtilisateur" class="utilisateur">
+			<input class="prenom" name="prenom"  placeholder="prenom" type="input"/>
+			<input class="nom" name="nom" placeholder="nom" type="input"/>
+			<input class="age" name="age" type="number" placeholder="age" value="0" min="0" max="200"/>
+			<input class="adresse" name="adresse" placeholder="adresse" type="input"/>
+			<input class="txt" type="submit" onclick="uPost()" value="Envoyer"/>
+		</div>
+		<div id="debug"></div>
+	</body>
+</html>
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$('.txt').on( "focusout", function(){
+	if(!isNaN($(this).val())){
+		$(this).css("background-color", "rgba(255, 0, 0, 0.5)");
+	}else{
+		$(this).css("background-color", "unset");
+	}
+});
+
+$('.digit').on("focusout", function(){
+	if(isNaN($(this).val())){
+		$(this).css("background-color", "rgba(255, 0, 0, 0.5)");
+	}else{
+		$(this).css("background-color", "unset");
+	}
+});
+
+
+	function uPost(){
+		console.log("Envoie user");
+		var uPrenom = $(".utilisateur > .prenom").val();
+		var uNom = $(".utilisateur > .nom").val();
+		var uAge = $(".utilisateur > .age").val();
+		var uAdresse = $(".utilisateur > .adresse").val();
+		$.post("ask/ask_nouvelUtilisateur.php", {prenom: uPrenom, nom: uNom, age: uAge, adresse: uAdresse}, function(data){
+			console.log(data);
+			//$("#debug").html(data);
+		});
+	}
+</script>
+-->
