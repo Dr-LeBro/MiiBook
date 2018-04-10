@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Index</title>
+</head>
+	<body>
+		<a href="connexion.html">connexion</a>
+		<a href="inscription.html">Inscription</a>
+		<a href="addlivre.html">add livre</a>
+	</body>
+</html>
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$('.txt').on( "focusout", function(){
+	if(!isNaN($(this).val())){
+		$(this).css("background-color", "rgba(255, 0, 0, 0.5)");
+	}else{
+		$(this).css("background-color", "unset");
+	}
+});
+
+$('.digit').on("focusout", function(){
+	if(isNaN($(this).val())){
+		$(this).css("background-color", "rgba(255, 0, 0, 0.5)");
+	}else{
+		$(this).css("background-color", "unset");
+	}
+});
+
+
+	function uPost(){
+		console.log("Envoie user");
+		var uPrenom = $(".utilisateur > .prenom").val();
+		var uNom = $(".utilisateur > .nom").val();
+		var uAge = $(".utilisateur > .age").val();
+		var uAdresse = $(".utilisateur > .adresse").val();
+		$.post("ask/ask_nouvelUtilisateur.php", {prenom: uPrenom, nom: uNom, age: uAge, adresse: uAdresse}, function(data){
+			console.log(data);
+		});
+	}
+	
+	function lPost(){
+		console.log("Envoie livre");
+		var lTitre = $(".livre > .titre").val();
+		var lAuteur = $(".livre > .auteur").val();
+		var lEditeur = $(".livre > .editeur").val();
+		$.post("ask/ask_nouveauLivre.php", {titre: lTitre, auteur: lAuteur, editeur: lEditeur}, function(data){
+			console.log(data);
+		});
+	}
+</script>
+-->
