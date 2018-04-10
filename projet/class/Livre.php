@@ -3,7 +3,7 @@
 		private $titre;
 		private $auteur;
 		private $editeur;
-		
+
 		function __construct($titre, $auteur, $editeur,$prix){
 			require_once "base.php";
 			if(!isset($_SESSION["existe"])){
@@ -15,6 +15,7 @@
 			$this->titre = $titre;
 			$this->auteur = $auteur;
 			$this->editeur = $editeur;
+
 			$this->prix = $prix;
 		}
 		
@@ -42,6 +43,7 @@
 		function setEditeur($editeur){
 			$this->editeur = $editeur;
 		}
+
 		public function getprix()
 		{
 			return $this->prix;

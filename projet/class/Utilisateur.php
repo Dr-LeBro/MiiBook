@@ -1,5 +1,6 @@
 <?php
 	class Utilisateur{
+
 		private $id;
 		private $nom;
 		private $prenom;
@@ -7,7 +8,6 @@
 		private $mail;
 		private $mdp;
 
-	
 		function __construct($nom, $prenom, $age, $mail, $mdp){
 			require_once "base.php";
 			if(!isset($_SESSION["existe"])){
@@ -20,6 +20,7 @@
 				echo "l'age doit etre un entier";
 				return;
 			}
+      
 			$this->id = -1;
 			$this->nom = $nom;
 			$this->prenom = $prenom;
@@ -54,7 +55,7 @@
 		}
 		
 
-		
+	
 		function getNom(){
 			return $this->nom;
 		}
@@ -64,8 +65,10 @@
 		function getAge(){
 			return $this->age;
 		}
+
 		function getmail(){
 			return $this->mail;
+
 		}
 
 		function setNom($nom){
@@ -81,6 +84,7 @@
 			}
 			$this->age = $age;
 		}
+
 		function setmail(){
 			$this->mail = $mail;
 		}
@@ -93,6 +97,7 @@
 		public function setmdp($mdp)
 		{ 
 			$this->nom=$mdp; 
+
 		}
 		
 		function initSession(){
@@ -115,6 +120,7 @@
 			}
 		}
 		
+
 	}
 
 ?>
