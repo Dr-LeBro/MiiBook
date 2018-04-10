@@ -1,0 +1,29 @@
+
+h1
+{
+	color: Red;	
+  border: 1px solid black;				
+  font-family: Verdana;					
+  text-decoration: blink; 			
+  top:0;
+  left: 0%;
+  width:100%;
+  text-align: center;					
+  text-shadow: 2px 2px 4px black;			
+	position: relative;
+
+}
+
+form
+{
+	position: relative;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.submit
+{
+	font-family: Verdana;
+	font-size: 2.5em;;
+
+}
